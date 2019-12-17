@@ -82,7 +82,7 @@ class JobsController extends Controller
             'nama'=>'required',
         ]);
         $data = [
-            'nama' => $request->nama,
+            'name' => $request->nama,
         ];
         Jobs::where('id_jobs',$id)->update($data);
         return redirect('jobs');
